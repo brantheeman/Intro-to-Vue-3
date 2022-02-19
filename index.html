@@ -11,15 +11,27 @@
   </head>
   <body>
     <div id="app">
-      <h1>{{product}}</h1>
-      <p>These {{product}} will change your life unlike any other pair of {{product}} you've ever worn.</p>
+      <div class="nav-bar"></div>
+      
+      <div class="product-display">
+        <div class="product-container">
+          <div class="product-image">
+            <img alt="sock" v-bind:src="image">
+          </div>
+          <div class="product-info">
+            <h1>{{ product }}</h1>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Import Js -->
+    <!-- Import App -->
     <script src="./main.js"></script>
 
+    <!-- Mount App -->
     <script>
       const mountedApp = app.mount('#app')
     </script>
   </body>
 </html>
+
