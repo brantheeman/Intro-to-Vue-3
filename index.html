@@ -2,18 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vue Mastery</title>
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="app">
-      <h1>Product goes here</h1>
+      <h1>{{product}}</h1>
+      <p>These {{product}} will change your life unlike any other pair of {{product}} you've ever worn.</p>
     </div>
 
     <!-- Import Js -->
     <script src="./main.js"></script>
+
+    <script>
+      const mountedApp = app.mount('#app')
+    </script>
   </body>
 </html>
